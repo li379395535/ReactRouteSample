@@ -1,0 +1,21 @@
+:root{
+    --padding:10px
+}
+.container{
+    display: flex;
+    &.links {
+        list-style-type: square;
+        padding:0px;
+    }
+}
+
+.sidebar{
+    padding:var(--padding);
+    width: 40%;
+    background:#f0f0f0;
+}
+
+.main{
+    flex: 1;
+    padding:10px;
+}
