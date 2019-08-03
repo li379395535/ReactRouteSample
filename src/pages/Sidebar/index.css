@@ -3,10 +3,12 @@
 }
 .container{
     display: flex;
-    &.links {
-        list-style-type: square;
-        padding:0px;
-    }
+    
+}
+
+.links {
+    list-style-type: square;
+    padding:0px;
 }
 
 .sidebar{

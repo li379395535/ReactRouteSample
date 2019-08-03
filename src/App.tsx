@@ -9,6 +9,10 @@ import PreventTransition from "./pages/PreventTransition";
 import NotMatch from "./pages/NotMatch";
 import RecursivePath from "./pages/RecursivePath";
 import Sidebar from "./pages/Sidebar";
+import AnimatedTransition from "./pages/AnimatedTransition";
+import AmbiguousMatchs from "./pages/AmbiguousMatchs";
+import RouteConfig from './pages/RouteConfig'
+import ModalGallery from "./pages/ModalGallery";
 
 const App: React.FC = () => {
   return (
@@ -41,6 +45,18 @@ const App: React.FC = () => {
             <li>
               <Link to="/sidebar">Sidebar</Link>
             </li>
+            <li>
+              <Link to="/AnimatedTransition">Animated Transition</Link>
+            </li>
+            <li>
+              <Link to="/AmbiguousMatchs">Ambiguous Matchs</Link>
+            </li>
+            <li>
+              <Link to="/RouteConfig">Route Config</Link>
+            </li>
+            <li>
+              <Link to="/modalgallery">Modal Gallery</Link>
+            </li>
           </ul>          
         </div>
         <div>
@@ -52,6 +68,10 @@ const App: React.FC = () => {
           <Route path="/notmatch" component={NotMatch} />
           <Route path="/recursivepath" component={RecursivePath} />
           <Route path="/sidebar" component={Sidebar} />
+          <Route path="/AnimatedTransition" component={AnimatedTransition} />
+          <Route path="/AmbiguousMatchs" component={AmbiguousMatchs} />
+          <Route path="/RouteConfig" component={RouteConfig} />
+          <Route path="/modalgallery" component={ModalGallery}/>
         </div>
 
       </Router>
